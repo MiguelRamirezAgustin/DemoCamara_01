@@ -1,0 +1,5 @@
+ <Alloy>
+    <Window onOpen="showIndicator" backgroundColor="orange">
+        <ActivityIndicator id="activityIndicator" style="Titanium.UI.ActivityIndicatorStyle.BIG" style="Titanium.UI.ActivityIndicatorStyle.PLAIN" ></ActivityIndicator>
+    </Window>
+  </Alloy>

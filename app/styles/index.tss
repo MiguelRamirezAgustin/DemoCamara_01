@@ -1,0 +1,41 @@
+".container": {
+	backgroundColor:"white",
+	borderRadius:5,
+	borderWidth:2
+}
+
+"#camara": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	title:"Camara",
+	borderRadius:4,
+	top:"5%",
+	backgroundColor:'orange',
+	top:"87%",
+	left:'10%'
+}
+
+"#Galeria": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	title:"Galeria",
+	borderRadius:4,
+	top:"5%",
+	backgroundColor:'orange',
+	top:"87%",
+	left:"40%"
+}
+
+"#siguiente": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "white",
+	title:"Siguiente",
+	borderRadius:4,
+	top:"5%",
+	backgroundColor:'orange',
+	top:"87%",
+	left:"70%"
+}

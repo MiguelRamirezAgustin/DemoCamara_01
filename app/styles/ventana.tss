@@ -1,0 +1,77 @@
+"#container":{
+	width:'100%',
+	height:'100%',
+	layout:'horizantal',
+	backgroundColor:'white',
+	borderColor:'orange',
+	borderRadius:5,
+	borderWidth:3,
+}
+
+"#vista1":{
+    backgroundColor:"white",
+	width: "40%",
+	height: "70%",
+	layout:"vertical",
+	top:0,
+	left:0
+}
+
+"#vista2":{
+    backgroundColor:"white",
+	borderRadius:5,
+	borderWidth:2,
+	width: "60%",
+	height: "70%",
+	layout:"vertical",
+	top:0,
+	right:0
+}
+
+".TextFilds":{
+	borderColor:"orange",
+	width:"90%",
+	height:"10%",
+	color:"black",
+	top:"9%",
+	left:3,
+	borderRadius:4,
+	maxLength:25,
+	keyboardType: Ti.UI.KEYBOARD_TYPE_DEFAULT
+}
+
+".labelTexto":{
+	top:'13%',
+	color:'black',
+	left:40,
+	font:{
+		fontSize:18
+	}
+}
+
+"#siguienteVista":{
+	width:"30%",
+	height:'7%',
+	borderRadius:5,
+	borderWidth:1,
+	borderColor:"black",
+	color:"white",
+	title:"Pasar Texto",
+	backgroundColor:"orange",
+	bottom:20,
+	left:'10%'
+}
+
+"#properties":{
+	width:"30%",
+	height:'7%',
+	borderRadius:5,
+	borderWidth:1,
+	borderColor:"black",
+	color:"white",
+	title:"Properties",
+	backgroundColor:"orange",
+	bottom:20,
+	left:'65%'
+}
+

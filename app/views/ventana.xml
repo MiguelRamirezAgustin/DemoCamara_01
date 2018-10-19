@@ -1,0 +1,18 @@
+<Alloy>
+    <Window id="container">
+        <View id="vista1">
+            <Label class="labelTexto">Nombre:</Label>
+            <Label class="labelTexto">Apellidos:</Label>
+            <Label class="labelTexto">Direccion:</Label>
+            <Label class="labelTexto">Ocupacion:</Label>
+        </View>
+        <View id="vista2">
+            <TextField id="campoTexto"  class="TextFilds"></TextField>
+            <TextField id="campoTexto1" class="TextFilds"></TextField>
+            <TextField id="campoTexto2" class="TextFilds"></TextField>
+            <TextField id="campoTexto3" class="TextFilds"></TextField>
+        </View> 
+            <Button id="siguienteVista" onClick="siguiente" ></Button>
+            <Button id="properties" ></Button>
+    </Window>
+</Alloy>

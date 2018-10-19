@@ -1,0 +1,8 @@
+"#activityIndicator":{
+     message:"Loading.......",
+     color:"black",
+     height:" Ti.UI.SIZE",
+     width: "Ti.UI.SIZE",
+     top:"30%",
+     indicatorColor:"red"
+}

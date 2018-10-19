@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container" onOpen="open2">
+		<Button id="camara"  onClick="AbrirCamara"></Button>
+		<Button id="Galeria"  onClick="AbrirGaleria"></Button>
+		<Button id="siguiente" ></Button>
+	</Window>
+</Alloy>
