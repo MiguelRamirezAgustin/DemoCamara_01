@@ -1,8 +1,44 @@
 "#windowPro":{
 	width: "100%",
 	height: "100%",
-    borderRadous:5,
+    borderRadous:12,
     borderColor:"orange", 
     backgroundColor:"white",
-    borderwidth:3
+    borderWidth:6,
+    layout:'vertical'
+}
+
+
+"#brnCerrar":{
+   	width:"30%",
+	height:'5%',
+	borderRadius:5,
+	borderWidth:1,
+	borderColor:"black",
+	color:"white",
+	title:"Cerrar",
+	backgroundColor:"orange",
+	bottom:"15%",
+}
+
+
+"#brnSiguiente":{
+   	width:"30%",
+	height:'5%',
+	borderRadius:5,
+	borderWidth:1,
+	borderColor:"black",
+	color:"white",
+	title:"Siguiente",
+	backgroundColor:"orange",
+	bottom:"3%",
+}
+
+"#brnMenu":{
+	top:'2%',
+	left:'3%',
+   	width:"10%",
+	height:'6%',
+	image:'/images/menu.png',
+	title:"menu"
 }

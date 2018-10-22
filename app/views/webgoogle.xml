@@ -1,0 +1,5 @@
+<Alloy>
+  <Window id="win" modal="true">
+    <WebView id="webview" url="https://www.google.com.mx"></WebView>
+  </Window>
+</Alloy>

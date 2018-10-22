@@ -12,7 +12,7 @@
             <TextField id="campoTexto2" class="TextFilds"></TextField>
             <TextField id="campoTexto3" class="TextFilds"></TextField>
         </View> 
-            <Button id="siguienteVista" onClick="siguiente" ></Button>
+            <Button id="arguments" ></Button>
             <Button id="properties" ></Button>
     </Window>
 </Alloy>

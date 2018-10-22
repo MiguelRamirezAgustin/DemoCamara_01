@@ -4,6 +4,12 @@
 	borderWidth:2
 }
 
+"#Viewmenu":{
+	white:'100%',
+	height:"5%",
+	borderColor:"red"
+}
+
 "#camara": {
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
@@ -39,3 +45,5 @@
 	top:"87%",
 	left:"70%"
 }
+
+

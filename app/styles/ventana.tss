@@ -3,7 +3,7 @@
 	height:'100%',
 	layout:'horizantal',
 	backgroundColor:'white',
-	borderColor:'orange',
+	borderColor:'#F5BD8F',
 	borderRadius:5,
 	borderWidth:3,
 }
@@ -31,9 +31,9 @@
 ".TextFilds":{
 	borderColor:"orange",
 	width:"90%",
-	height:"10%",
+	height:50,
 	color:"black",
-	top:"9%",
+	top:"11%",
 	left:3,
 	borderRadius:4,
 	maxLength:25,
@@ -41,22 +41,22 @@
 }
 
 ".labelTexto":{
-	top:'13%',
+	top:'15%',
 	color:'black',
 	left:40,
 	font:{
-		fontSize:18
+		fontSize:20
 	}
 }
 
-"#siguienteVista":{
+"#arguments":{
 	width:"30%",
 	height:'7%',
 	borderRadius:5,
 	borderWidth:1,
 	borderColor:"black",
 	color:"white",
-	title:"Pasar Texto",
+	title:"Argumentos",
 	backgroundColor:"orange",
 	bottom:20,
 	left:'10%'

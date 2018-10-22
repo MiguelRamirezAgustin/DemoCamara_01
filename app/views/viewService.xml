@@ -1,0 +1,16 @@
+<Alloy>
+    <Window backgroundColor="white">
+            <ListView id="lisctcontactos" defaultItemTemplate="templateContacto">
+               <Templates>
+                  <ItemTemplate name="templateContacto">
+                        <ImageView binIde="avatar" id="avatar"/>
+                        <Label binIde="nombre" id="nombre" />
+                  </ItemTemplate>
+               </Templates>
+
+               <ListSection name="contactos">
+
+               </ListSection>
+            </ListView>
+    </Window>
+</Alloy>

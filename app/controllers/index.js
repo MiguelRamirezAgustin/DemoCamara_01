@@ -9,7 +9,7 @@ var imageViewImage= Ti.UI.createImageView({
 	borderRadius:10,
 	borderWidtsh:2,
 	borderColor:"black",
-	top:'20'
+	top:'5%'
 });
 
 $.index.add(imageViewImage);
@@ -71,7 +71,7 @@ function BuscarImagen(){
    if(Ti.Network.networkType == Ti.Network.NETWORK_NONE){
 	   alert('No tienes coneccion a internet');
    }else{
-	   alert('tienes coneccion a internet')
+	   alert('tienes coneccion a internet');
    }
 };
 
@@ -88,7 +88,7 @@ function AbrirGaleria(){
 			alert ('media.width: ' + e.media.whidth
 				+ '\nmedia.heigth: ' + e.media.height
 				+ '\nmedia.mimeType: ' + e.media.mimeType
-				+ '\nmedia.nativePath:' + e.media.nativePath )	
+				+ '\nmedia.nativePath:' + e.media.nativePath );	
 		},
 		error: function(e){
 			alert('El error es\n '+e);

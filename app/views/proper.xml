@@ -1,6 +1,9 @@
 <Alloy>
   <Window id="windowPro">
     <View id="view3">
+       <ImageView id="brnMenu"></ImageView>
+       <Button id="brnCerrar"></Button>
+       <Button id="brnSiguiente"></Button>
     </View>
   </Window>
 </Alloy>

@@ -1,9 +1,15 @@
 
+$.arguments.addEventListener('click', function(){
+   var passParametros= {
+          'textoNombre':$.campoTexto.getValue(),
+          'textoApellidos':$.campoTexto1.getValue(),
+          'textoDireccion':$.campoTexto2.getValue(),
+          'textoOcupacion':$.campoTexto3.getValue(),
+   };
 
-function siguiente (e){
-  Alloy.createController('proper').getView().open();
-}
-
+   var newWindow = Alloy.createController('proper', passParametros).getView();
+   newWindow.open();
+});
 
 
 //parar parametros mediante properties
@@ -24,3 +30,5 @@ $.properties.addEventListener('click', function(e){
     var newwindow=Alloy.createController('proper').getView();
     newwindow.open();
 });
+
+
