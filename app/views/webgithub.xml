@@ -1,0 +1,6 @@
+<Alloy>
+  <Window modal="true">
+     <WebView url="https://github.com/">
+     </WebView>
+  </Window>
+</Alloy>

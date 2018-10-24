@@ -1,0 +1,6 @@
+<Alloy>
+  <Window  modal="true"> 
+    <WebView url="https://www.google.com.mx/maps/@19.3660206,-99.1843678,15z?hl=es">
+    </WebView>
+  </Window >
+</Alloy>

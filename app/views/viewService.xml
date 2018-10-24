@@ -1,16 +1,20 @@
 <Alloy>
-    <Window backgroundColor="white">
-            <ListView id="lisctcontactos" defaultItemTemplate="templateContacto">
+    <Window backgroundColor="white" id="windowUno" layout="vertical">
+    	 <Label id="labelTitulo"></Label>
+    	<ScrollView id="scrollview" showVerticalScrollIndicator="true" layout="vertical" backgroundColor="#B0DEF7">
+    		
+    	</ScrollView>
+         <!--  <ListView id="lisctContactos" defaultItemTemplate="templateContacto" >
                <Templates>
                   <ItemTemplate name="templateContacto">
-                        <ImageView binIde="avatar" id="avatar"/>
-                        <Label binIde="nombre" id="nombre" />
+                        <ImageView binId="imagen" id="imagen"/>
+                        <Label binId="nombre" id="nombre" />
                   </ItemTemplate>
                </Templates>
 
                <ListSection name="contactos">
 
                </ListSection>
-            </ListView>
+         </ListView> -->
     </Window>
 </Alloy>

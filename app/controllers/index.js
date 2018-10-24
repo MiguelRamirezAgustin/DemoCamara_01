@@ -114,6 +114,12 @@ function open2(){
 	indicador.open();
 }
 
+var tooas= Ti.UI.createNotification({
+	message:'Notifacion',
+	duration:Ti.UI.NOTIFICATION_DURATION_LONG
+   });
+
+$.index.add(tooas);
 $.index.open();
 
 // do some work that takes 6 seconds

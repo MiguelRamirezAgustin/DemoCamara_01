@@ -1,5 +1,6 @@
  <Alloy>
-    <Window onOpen="showIndicator" backgroundColor="orange">
-        <ActivityIndicator id="activityIndicator" style="Titanium.UI.ActivityIndicatorStyle.BIG" style="Titanium.UI.ActivityIndicatorStyle.PLAIN" ></ActivityIndicator>
+    <Window onOpen="showIndicator" backgroundColor="#D5D2D1">
+        <ActivityIndicator id="activityIndicator" 
+      message="Loading..."></ActivityIndicator>
     </Window>
   </Alloy>

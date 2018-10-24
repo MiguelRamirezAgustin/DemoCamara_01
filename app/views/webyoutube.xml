@@ -1,0 +1,6 @@
+<Alloy>
+  <Window modal="true">
+     <WebView url="https://www.youtube.com/watch?v=UF3QoCezvf4&list=PLHVxIp3nJqRqcRSHk8IZ6a7t4kKjeGZDs">
+     </WebView>
+  </Window>
+</Alloy>

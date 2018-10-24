@@ -1,19 +1,16 @@
-"#viewServer":{
-    width:"100%",
-    height:'100%',
-    backgroundColor:"white"
-}
 
-"#avatar":{
-	left:10,
-	height:'20%',
-	width:"20%"
-}
-
-"#nombre":{
-	left:70,
-	color:'black',
-	font:{
-		fontSize:18
-	}
+"#labelTitulo":{
+   text:"Datos de Usuarios",
+   color:"white",
+   backgroundColor:"orange",
+   color:"white",   
+   width:'100%',
+   heigth:'auto',
+   borderRadius:2,
+   top:0,
+   left:0,
+   textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+   font:{
+        fontSize:30,
+    }	
 }

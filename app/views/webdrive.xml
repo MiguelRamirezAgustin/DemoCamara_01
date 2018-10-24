@@ -1,0 +1,5 @@
+<Alloy>
+  <Window modal="true">
+    <WebView url="https://www.google.com/intl/es_ALL/drive/" />
+   </Window >
+</Alloy>

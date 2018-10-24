@@ -13,8 +13,8 @@ var popupView= Ti.UI.createView({
     heigth:'50%',
     backgroundColor:'black',
     opacity:0.5,
-    borderRadius:2,
-  //borderWidth:2,
+    borderRadius:3,
+    borderWidth:1,
     borderColor:"orange",
     layout:'vertical',
     left:0,
@@ -27,9 +27,9 @@ popupView.add(Ti.UI.createLabel({
     top:0,
     left:0,
     backgroundColor:'orange',
-    text:'MENU',
+    text:'MENÙ',
     color:"white",
-    textAling:Titanium.UI.TEXT_ALIGNMENT_CENTER,
+    textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
     font:{
         fontSize:30,
         fontWeight:'bold'
@@ -67,7 +67,13 @@ var label1=Ti.UI.createLabel({
     }
  });
  view1.add(label1);
- 
+
+ //llamada de la vista google evento en el label 
+ label1.addEventListener('click', function(e){
+    var weblabel=Alloy.createController('webgoogle').getView();
+    weblabel.open();
+ }); 
+
 
  //vista 2
 var view2= Ti.UI.createView({
@@ -98,6 +104,12 @@ var label2=Ti.UI.createLabel({
 });
 view2.add(label2);
 
+//llamada de la vista skype evento el label
+label2.addEventListener('click', function(e){
+   var webskype=Alloy.createController('webskype').getView();
+   webskype.open();
+});
+
 //vista 3
 var view3=Ti.UI.createView({
    height:'100%',
@@ -106,14 +118,21 @@ var view3=Ti.UI.createView({
 });
 popupView.add(view3);
 
-var ima3=Ti.UI.createImageView({
+var img3=Ti.UI.createImageView({
    image:'/images/youtube.png',
    height:'45%',
    width:'15%',
    left:15,
    top:20
 });
-view3.add(ima3);
+view3.add(img3);
+
+//llamada de la vista youtube evento en la imagen 
+img3.addEventListener('click', function(e){
+    var webyoutube= Alloy.createController('webyoutube').getView();
+    webyoutube.open();
+   });
+
 
 var label13=Ti.UI.createLabel({
    text:'YouTube', 
@@ -133,6 +152,7 @@ var view4=Ti.UI.createView({
     layout:'horizontal',
  });
  popupView.add(view4);
+
  
  var ima4=Ti.UI.createImageView({
     image:'/images/git.png',
@@ -142,6 +162,12 @@ var view4=Ti.UI.createView({
     top:20
  });
  view4.add(ima4);
+ 
+ //llamada de la vista github evento en la imagen
+ ima4.addEventListener('click', function(e){
+    var webgithub=Alloy.createController('webgithub').getView();
+    webgithub.open();
+ });
  
  var label14=Ti.UI.createLabel({
     text:'GitHub', 
@@ -154,6 +180,77 @@ var view4=Ti.UI.createView({
  });
  view4.add(label14);
 
+
+//vista 5
+var view5=Ti.UI.createView({
+   width:"100%",
+   height:"10%",
+   layout:"horizontal"
+});
+popupView.add(view5);
+
+//llamada de la vista evento en la vista
+view5.addEventListener('click', function(e){
+   var webmapa= Alloy.createController('webmapa').getView();
+   webmapa.open();
+});
+
+var img5= Ti.UI.createImageView({
+   width:"15%",
+   height:"45%",
+   image:"/images/map.png",
+   top:20,
+   left:15
+});
+view5.add(img5);
+
+label5=Ti.UI.createLabel({
+   text:'Mapa',
+   color:"white",
+   left:"10%",
+   top:"30%",
+   font:{
+       fontSize:18
+   }
+});
+view5.add(label5);
+
+//visata 6
+var view6=Ti.UI.createView({
+  width:"100%",
+  height:"10%",
+  layout:"horizontal"
+});
+popupView.add(view6);
+
+//llamada de la vista drive evento en la vista
+view6.addEventListener('click', function(e){
+   var webdrive= Alloy.createController('webdrive').getView();
+   webdrive.open();
+});
+
+var img6= Ti.UI.createImageView({
+    width:"15%",
+    height:"45%",
+    image:"/images/drive.png",
+    top:20,
+    left:15
+});
+view6.add(img6);
+
+var label6=Ti.UI.createLabel({
+   text:"Drive",
+   color:"white",
+   left:"10%",
+   top:"30%",
+   font:{
+       fontSize:18
+   }
+});
+view6.add(label6);
+
+
+
 popupWin.addEventListener('click', function(e){
    if(e.source.id !=null)
    popupWin.close();
@@ -161,10 +258,3 @@ popupWin.addEventListener('click', function(e){
 return popupWin;
 };
 
-
-
-//funcion id
-$.labelweb.addEventListener('click', function(e){
-    var weblabel= Alloy.createController('webgoogle').getView();
-    weblabel.open();
-});

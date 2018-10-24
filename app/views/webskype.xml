@@ -1,0 +1,5 @@
+<Alloy>
+  <Window modal="true">
+    <WebView url="https://account.microsoft.com/account/skype"></WebView>
+  </Window>
+</Alloy>
