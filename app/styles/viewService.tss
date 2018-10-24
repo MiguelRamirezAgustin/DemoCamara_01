@@ -1,9 +1,9 @@
 
 "#labelTitulo":{
-   text:"Datos de Usuarios",
+   text:"DATOS DE USUARIOS",
    color:"white",
    backgroundColor:"orange",
-   color:"white",   
+   color:"black",   
    width:'100%',
    heigth:'auto',
    borderRadius:2,
@@ -11,6 +11,13 @@
    left:0,
    textAlign:Titanium.UI.TEXT_ALIGNMENT_CENTER,
    font:{
-        fontSize:30,
+        fontSize:18,
     }	
+}
+
+
+"#scrollview":{
+    borderColor:"orange",
+    borderWidth:2,
+    borderRadius:5
 }

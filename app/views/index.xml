@@ -1,7 +1,16 @@
 <Alloy>
 	<Window class="container" onOpen="open2">
-		<Button id="camara"  onClick="AbrirCamara"></Button>
-		<Button id="Galeria"  onClick="AbrirGaleria"></Button>
-		<Button id="siguiente" ></Button>
+		<View id="viewFoto">
+		</View>
+	   <View id="viewBotones">
+				<View id="vieBotones1">
+					<Button id="camara"  onClick="AbrirCamara"></Button>
+					<Button id="Galeria"  onClick="AbrirGaleria"></Button>
+				</View>
+				<View id="vieBotones2">
+					<Button id="siguiente" ></Button>
+				    <Button id="btnConsultaFotos"></Button>
+			    </View>
+		</View>
 	</Window>
 </Alloy>

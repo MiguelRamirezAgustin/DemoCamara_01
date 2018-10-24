@@ -3,8 +3,8 @@ var image = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory, 'image
 
 var imageViewImage= Ti.UI.createImageView({
 	image:image.read(),
-	height:'70%',
-	width:'80%',
+	height:'90%',
+	width:'70%',
 	backgroundColor:'#F0FFFF',
 	borderRadius:10,
 	borderWidtsh:2,
@@ -12,7 +12,7 @@ var imageViewImage= Ti.UI.createImageView({
 	top:'5%'
 });
 
-$.index.add(imageViewImage);
+$.viewFoto.add(imageViewImage);
 
 function AbrirCamara(e) {
 	if(!Ti.Media.hasCameraPermissions()){
@@ -113,6 +113,11 @@ function open2(){
 	var indicador =Alloy.createController('indicador').getView();
 	indicador.open();
 }
+
+$.btnConsultaFotos.addEventListener('click', function(e){
+   var consutaFoto = Alloy.createController('consultaFoto').getView();
+   consutaFoto.open();
+});
 
 var tooas= Ti.UI.createNotification({
 	message:'Notifacion',

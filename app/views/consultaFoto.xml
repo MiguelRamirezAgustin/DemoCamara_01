@@ -1,0 +1,11 @@
+<Alloy>
+   <Window  backgroundColor="white"  layout="vertical">
+        <ScrollView id="scrollViewFotos" showVerticalScrollIndicator="true" layout="vertical"> 
+        </ScrollView>
+       <!--<View layout="vertical" width="90%" height="80%">
+           <ScrollableView id="scrollView" showPagingControl="true">
+           
+           </ScrollableView>
+       </View>-->
+   </Window>
+</Alloy>
