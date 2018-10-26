@@ -24,3 +24,30 @@ overrode the settings with other TSS, XML, or JS settings:
 }
 
 */
+
+
+"#textFielUsuario":{
+    width:"50%",
+    height:"7%",
+    color:"black",
+    top:"20%",
+    borderColor:"black"
+}
+
+"#textFieldContraseña":{
+    width:"50%",
+    height:"7%",
+    color:"black",
+    borderColor:"black",
+    top:"5%"
+}
+
+"#btnConsulta":{
+    width:"35%",
+    height:"5%",
+    color:"black",
+    backgroundColor:"orange",
+    title:"click",
+    borderRadiuns:5,
+    top:"10%"
+}

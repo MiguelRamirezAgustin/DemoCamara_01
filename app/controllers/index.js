@@ -9,7 +9,7 @@ var imageViewImage= Ti.UI.createImageView({
 	borderRadius:10,
 	borderWidtsh:2,
 	borderColor:"black",
-	top:'5%'
+	top:'4%'
 });
 
 $.viewFoto.add(imageViewImage);
@@ -124,10 +124,14 @@ var tooas= Ti.UI.createNotification({
 	duration:Ti.UI.NOTIFICATION_DURATION_LONG
    });
 
+$.btnMenusUarios.addEventListener('click', function(e){
+  var modal=require('menupopus.js').menuwin;
+  var wins= new modal();
+  wins.open();
+})
+
 $.index.add(tooas);
 $.index.open();
 
 // do some work that takes 6 seconds
 // ie. replace the following setTimeout block with your code
-
-

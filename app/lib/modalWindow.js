@@ -249,7 +249,28 @@ var label6=Ti.UI.createLabel({
 });
 view6.add(label6);
 
+var view7=Ti.UI.createView({
+      width:"100%",
+      height:"10%",
+      layout:"horizontal"
+});
+popupView.add(view7);
 
+var label7=Ti.UI.createLabel({
+    text:"Imagen",
+    color:"white",
+    left:"10%",
+    top:"30%",
+    font:{
+        fontSize:20
+    }
+ });
+ view7.add(label7);
+
+ popupView.addEventListener('click', function(e){
+   var imagen=Alloy.createController('imagen').getView();
+   imagen.open();
+ });
 
 popupWin.addEventListener('click', function(e){
    if(e.source.id !=null)

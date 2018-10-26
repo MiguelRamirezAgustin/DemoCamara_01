@@ -1,6 +1,6 @@
 //consulta de datos
 function obtenerDatos(cantidad){
-    var url = "https://randomuser.me/api/?results=" + cantidad;
+    var url = "https://randomuser.me/api/?results=" + cantidad; // + $.texFielBuscar.value; //cantidad;
     var xhr=Ti.Network.createHTTPClient({
        //collback
         onload: function(e){ 	
@@ -72,8 +72,8 @@ function obtenerDatos(cantidad){
 	           	 viewInfo.add(label1);
 	           	
 	            var labelcity= Ti.UI.createLabel({
-	           	   color:'black',
-	           	   left:"5%",
+	           	      color:'black',
+	           	      left:"5%",
 					  text:'Ciudad:  '+result.results[i].location.city,
 					  font:{
 						  fontSize:10,
@@ -82,8 +82,8 @@ function obtenerDatos(cantidad){
 	             viewInfo.add(labelcity);
 	             
 	             var labelcalle= Ti.UI.createLabel({
-	             	color:"black",
-	             	left:"5%",
+	             	 color:"black",
+	             	 left:"5%",
 					 text:"Calle:  " + result.results[i].location.street,
 					 font:{
 						 fontSize:10,
@@ -92,8 +92,8 @@ function obtenerDatos(cantidad){
 				 viewInfo.add(labelcalle);
 	            
 	            var labelimal= Ti.UI.createLabel({
-	           	  color:"black",
-	           	  left:"5%",
+	           	     color:"black",
+	           	     left:"5%",
 					 text:'Email:  '+result.results[i].email,
 					 font:{
 						 fontSize:10,

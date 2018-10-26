@@ -1,9 +1,20 @@
 <Alloy>
-    <Window backgroundColor="white" id="windowUno" layout="vertical">
-    	 <Label id="labelTitulo"></Label>
-    	<ScrollView id="scrollview" showVerticalScrollIndicator="true" layout="vertical" backgroundColor="#B0DEF7">
-    		
-    	</ScrollView>
+    <Window >
+     <View id="viewGeneral">
+           <View id="viewTitulo">
+                  <Label id="labelTitulo"></Label>
+            </View>
+            <View id="viewBuscar">
+                  <TextField id="texFielBuscar"></TextField>
+                  <Button id="btnBuscar" onClick="obtenerDatos"> </Button>              
+            </View>
+            <View id="viewDatos">
+                  <ScrollView id="scrollview" showVerticalScrollIndicator="true" layout="vertical" borderColor="white" backgroundColor="#B0DEF7" >
+                  </ScrollView>
+            </View>  
+      </View>  
+      </Window>
+</Alloy>
          <!--  <ListView id="lisctContactos" defaultItemTemplate="templateContacto" >
                <Templates>
                   <ItemTemplate name="templateContacto">
@@ -16,5 +27,4 @@
 
                </ListSection>
          </ListView> -->
-    </Window>
-</Alloy>
+   

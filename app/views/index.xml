@@ -1,6 +1,7 @@
 <Alloy>
 	<Window class="container" onOpen="open2">
 		<View id="viewFoto">
+		    <Button id="btnMenusUarios"></Button>
 		</View>
 	   <View id="viewBotones">
 				<View id="vieBotones1">
@@ -8,8 +9,8 @@
 					<Button id="Galeria"  onClick="AbrirGaleria"></Button>
 				</View>
 				<View id="vieBotones2">
-					<Button id="siguiente" ></Button>
 				    <Button id="btnConsultaFotos"></Button>
+					<Button id="siguiente" ></Button>
 			    </View>
 		</View>
 	</Window>

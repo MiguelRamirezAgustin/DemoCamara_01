@@ -1,0 +1,7 @@
+<Alloy>
+   <Window backgroundColor="white" layout="vertical">
+       <TextField id="textFielUsuario"></TextField>
+       <TextField id="textFieldContraseña"></TextField>
+       <Button id="btnConsulta"></Button>
+   </Window>
+</Alloy>
