@@ -1,30 +1,36 @@
 
 
-function metodoPost(){
-
-var xhr= Ti.UI.Network.createHTTPClient();
-    xhr.open('POST', 'https://api.cloud.appcelerator.com/v1/users/login.json?key=osLPdnTb5dq1f7qZnvalENoEk1b1TRkI&pretty_json=true');
-
-    xhr.onload= function(e){
-      var content = JSON.parse(this.responseText);
-      Ti.API.info(content);
-      if(content.error == undefined){
-            alert('prueba');
+$.btnConsulta.addEventListener('click', function(e){
+      if($.textFielUsuario.getValue() =='' && $.textFieldContraseña.getValue() ==''){
+               alert('No a ingresado datos \nusuario \ncontraseña');
+              // $.textFieldContraseña.style.setBorderColor("red");
+              // $.textFielUsuario.style.setBorderColor("red");
       }else{
-            alert(content.error);
-      }
-};
-    xhr.onerror= function(e){
-     Ti.UI.createAlertDialogo({title: 'Error', message:e.error}).show();
-     Ti.UI.info(e.error);  
-  };
-  setTimeout: 6000;
-
-  xhr.setRequestHeand("Content-Type", 'application/x-www-form-urlencoded');
-  xhr.send({ 
-      textFielUsuario: '',
-      textFieldContraseña:''
+     var xhr =Ti.Network.createHTTPClient({
+     onload:function(e){
+         
+      var result=JSON.parse(this.responseText);
+      //alert(JSON.stringify(result));
+      alert('Usuario y contraseña correcta');
+      setTimeout(function(){
+       var acceso=Alloy.createController('usuarios').getView();
+       acceso.open();
+      },3000); 
+    },
+     onerror:function(e){
+         alert('Usuaro y contraseña incorrecta');
+         //$.textFieldContraseña.style.setBorderColor("red");
+         //$.textFielUsuario.style.setBorderColor("red");
+        //alert(e.error)
+        //Ti.API.info(e.error);
+   },
+   timeout:5000
+  });
+    xhr.open('POST', 'https://api.cloud.appcelerator.com/v1/users/login.json?key=osLPdnTb5dq1f7qZnvalENoEk1b1TRkI&pretty_json=true');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send({
+          login:$.textFielUsuario.getValue(), 
+          password:$.textFieldContraseña.getValue()
+     }); 
+    } 
 });
-}
-
-metodoPost();

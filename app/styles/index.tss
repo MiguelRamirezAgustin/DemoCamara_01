@@ -1,8 +1,8 @@
 ".container": {
 	backgroundColor:"white",
 	borderRadius:5,
-	borderWidth:4,
-	borderColor:'#F5BD8F',
+	borderWidth:2,
+	borderColor:'74BCFE',
 	layout:"vertical"
 }
 "#viewFoto":{
@@ -62,10 +62,10 @@
 }
 
 "#btnMenusUarios":{
-    width:"10%",
-    height:"10%",
-    left:"0%",
-    top:"0%",
+    width:"9%",
+    height:"9%",
+    left:"2%",
+    top:"2%",
     backgroundImage:'/images/menu001.png',
     borderColor:"white"
 }

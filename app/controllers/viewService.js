@@ -1,6 +1,10 @@
 //consulta de datos
-function obtenerDatos(cantidad){
-    var url = "https://randomuser.me/api/?results=" + cantidad; // + $.texFielBuscar.value; //cantidad;
+function obtenerDatos(){
+	if($.texFielBuscar.getValue() ==0 ||  $.texFielBuscar.getValue() ==''){
+		alert('No a ingresado numero de usuarios');
+	}else{
+
+    var url = "https://randomuser.me/api/?results=" + $.texFielBuscar.getValue(); // + $.texFielBuscar.value; //cantidad;
     var xhr=Ti.Network.createHTTPClient({
        //collback
         onload: function(e){ 	
@@ -121,11 +125,13 @@ function obtenerDatos(cantidad){
             //Ti.API.info(e.error);
             alert('Error' + e.error);
         },
-        timeout:500
+        timeout:4000
     });
     xhr.open("GET", url);
     xhr.send();
+ } 
 };
+
 
 
 /* //............funcion pars usar lisview..............
@@ -147,6 +153,5 @@ function crearContactos(contactos){
   $.lisctContactos.sections[0].setItems(items);
 }*/ //............funcion pars usar lisview.............
 
-obtenerDatos(200);
 
 

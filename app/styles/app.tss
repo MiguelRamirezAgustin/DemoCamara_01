@@ -30,8 +30,10 @@ overrode the settings with other TSS, XML, or JS settings:
     width:"50%",
     height:"7%",
     color:"black",
-    top:"20%",
-    borderColor:"black"
+    top:"8%",
+    borderColor:"black",
+    title:"Usuario",
+    borderRadius:4
 }
 
 "#textFieldContraseña":{
@@ -39,15 +41,25 @@ overrode the settings with other TSS, XML, or JS settings:
     height:"7%",
     color:"black",
     borderColor:"black",
-    top:"5%"
+    top:"5%",
+    title:"Contraseña",
+    borderRadius:4
 }
 
 "#btnConsulta":{
     width:"35%",
-    height:"5%",
+    height:"7%",
     color:"black",
     backgroundColor:"orange",
-    title:"click",
-    borderRadiuns:5,
-    top:"10%"
+    title:"Login..",
+    borderRadius:5,
+    top:"10%",
+    borderColor:"black"
+}
+
+"#img":{
+    width:"24%",
+    height:"18%",
+    top:"10%",
+    image:'/images/chico.png'
 }
