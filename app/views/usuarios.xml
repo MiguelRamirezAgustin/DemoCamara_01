@@ -1,4 +1,9 @@
 <Alloy>
-  <Window  backgroundColor="white">
+  <Window  backgroundColor="white" layout="vertical">
+     <View id="viewCrearUsuario" height="10%" whidth="100%"  top="0%" layout="horizontal" backgroundColor="#06A4C9">
+     </View>
+     <View id="viewVerUsuario" zIndex=0 height="90%" whidth="100%" borderColor="blue" top="0%" backgroundColor="#7C77FA">
+      
+     </View>
   </Window>
 </Alloy>
