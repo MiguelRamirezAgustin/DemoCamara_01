@@ -24,7 +24,7 @@ function verFotos(){
                    left:0,
                    width:"30%",
                    heigth:"30%",
-               })
+               });
                viewfotos.add(viewImage);
 
               var imageFotos= Ti.UI.createImageView({
@@ -51,7 +51,7 @@ function verFotos(){
                    }
                 
                });
-               viewInformacion.add(labelFecha)
+               viewInformacion.add(labelFecha);
          }
       },
     onerror: function(e){

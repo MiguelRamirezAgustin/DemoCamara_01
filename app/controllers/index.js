@@ -160,7 +160,7 @@ $.btnMenusUarios.addEventListener('click', function(e){
   var modal=require('menupopus.js').menuwin;
   var wins= new modal();
   wins.open();
-})
+});
 
 //orientacion de dispositivo
 

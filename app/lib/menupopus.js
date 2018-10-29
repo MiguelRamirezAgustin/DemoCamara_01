@@ -65,5 +65,5 @@ label1.addEventListener('click', function(e){
 wins.addEventListener('click', function(e){
      wins.close();
 });
-return wins
+return wins,
 }

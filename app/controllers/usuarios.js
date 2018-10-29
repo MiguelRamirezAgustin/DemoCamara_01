@@ -10,7 +10,7 @@ var btn= Titanium.UI.createButton({
       backgroundColor:"white",
       color:"#7C77FA",
       borderColor:"white"
-})
+});
 $.viewCrearUsuario.add(btn);
 
 btn.addEventListener('click', function(e){
@@ -181,7 +181,7 @@ btn.addEventListener('click', function(e){
       color:"black",
       borderRadius:5,
       borderColor:'white'
-   })
+   });
    crearView.add(btnAgregar);
   
    //Agregar usuarios metodo post
@@ -235,7 +235,7 @@ var btnMostraUsuario =Titanium.UI.createButton({
       backgroundColor:"white",
       color:"#7C77FA",
       borderColor:"white"
-  })
+ });
 $.viewCrearUsuario.add(btnMostraUsuario);
 
 btnMostraUsuario.addEventListener('click', function(e){
