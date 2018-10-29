@@ -9,7 +9,7 @@
                   <Button id="btnBuscar" onClick="obtenerDatos"> </Button>              
             </View>
             <View id="viewDatos">
-                  <ScrollView id="scrollview" showVerticalScrollIndicator="true" layout="vertical" borderColor="white" backgroundColor="#B0DEF7" >
+                  <ScrollView id="scrollview" showVerticalScrollIndicator="true" layout="vertical" borderColor="white" backgroundColor="#8A86FB">
                   </ScrollView>
             </View>  
       </View>  

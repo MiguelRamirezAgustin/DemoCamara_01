@@ -11,6 +11,7 @@
 				<View id="vieBotones2">
 				    <Button id="btnConsultaFotos"></Button>
 					<Button id="siguiente" ></Button>
+					<Button id="AbrirGaleriaPhoto" onClick="AbrirGaleriaPhotos"></Button>
 			    </View>
 		</View>
 	</Window>

@@ -20,7 +20,7 @@ function obtenerDatos(){
            	 	var views= Ti.UI.createView({
            	 		width:"100%",
            	 		height:"18%",
-           	 		backgroundColor:"#B0DEF7",
+				backgroundColor:"#8A86FB",
            	 		borderWidth:1,
            	 		borderColor:"white",
            	 		borderRadius:5,

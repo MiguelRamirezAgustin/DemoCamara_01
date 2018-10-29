@@ -51,7 +51,7 @@ var label1=Ti.UI.createLabel({
       left:'5%',
       id:'labelweb',
       font:{
-          fontSize:20
+          fontSize:25
       }
 });
 view1.add(label1);

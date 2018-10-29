@@ -1,5 +1,5 @@
 ".container": {
-	backgroundColor:"white",
+	backgroundColor:"#8A86FB",
 	borderRadius:5,
 	borderWidth:2,
 	borderColor:'74BCFE',
@@ -8,33 +8,37 @@
 "#viewFoto":{
    white:"100%",
    height:"70%",
+   backgroundColor:"#8A86FB"
 }
 
 "#viewBotones":{
 	width:"100%",
 	height:"30%",
 	layout:"horizontal",
+	backgroundColor:"#8A86FB"
 }
 
 "#vieBotones1":{
 	width:"50%",
 	height:"100%",
-	layout:"vertical"
+	layout:"vertical",
+	borderColor:"#8A86FB",
 }
 
 
 "#vieBotones2":{
 	width:"50%",
 	height:"100%",
-	layout:"vertical"
+	layout:"vertical",
+	borderColor:"#8A86FB"
 }
 
 "#camara": {
 	width:"23%",
 	height:"23%",
-	top:"15%",
+	top:"10%",
 	backgroundImage:'/images/camara.png',
-	borderColor:"white",
+	borderColor:"#8A86FB",
 }
 
 "#Galeria": {
@@ -42,15 +46,15 @@
 	height:"23%",
 	top:"10%",
 	backgroundImage:'/images/galeria.png',
-	borderColor:"white",
+	borderColor:"#8A86FB",
 }
 
 "#btnConsultaFotos":{
 	width:"25%",
 	height:"25%",
-	top:"15%",
+	top:"10%",
 	backgroundImage:'/images/galeriass.png',
-	borderColor:"white"
+	borderColor:"#8A86FB",
 }
 
 "#siguiente": {
@@ -58,7 +62,7 @@
 	height:"23%",
 	top:"10%",
 	backgroundImage:'/images/next.png',
-	borderColor:"white",
+	borderColor:"#8A86FB",
 }
 
 "#btnMenusUarios":{
@@ -67,5 +71,16 @@
     left:"2%",
     top:"2%",
     backgroundImage:'/images/menu001.png',
-    borderColor:"white"
+    borderColor:"#8A86FB",
+}
+
+
+"#AbrirGaleriaPhoto":{
+  color:"white",
+  width:"75%",
+  height:"18%",
+  title:"Imagen base_64",
+  left:10,
+  top:"10%",
+  backgroundColor:"orange"
 }

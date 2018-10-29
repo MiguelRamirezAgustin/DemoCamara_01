@@ -267,10 +267,7 @@ var label7=Ti.UI.createLabel({
  });
  view7.add(label7);
 
- popupView.addEventListener('click', function(e){
-   var imagen=Alloy.createController('imagen').getView();
-   imagen.open();
- });
+ 
 
 popupWin.addEventListener('click', function(e){
    if(e.source.id !=null)

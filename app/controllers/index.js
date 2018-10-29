@@ -96,6 +96,38 @@ function AbrirGaleria(){
 	});
 }
 
+
+function AbrirGaleriaPhotos(){
+  
+    Titanium.Media.openPhotoGallery({
+	mediaTypes:[Titanium.MEDIA_TYPE_PHOTO],
+
+	    success:function(event){
+		   var cropRect=event.cropRect;
+		   // var image= event.media;
+
+		    Ti.API.debug('el tipo es:  '+ event.mediaTypes);
+		    console.log('__________________'+event);
+
+		    if(event.mediaTypes==Ti.MEDIA_TYPE_PHOTO){
+			    var image=event.media;
+			    console.log("*****************"+event.mediaTypes);
+			    imageViewImage.setImage(event.media);
+			    var imgStrin=Ti.Utils.base64encode(image).toString();
+			    alert(JSON.stringify(imgStrin));
+
+			    console.log('Base 64___________\n'+imgStrin);
+		    }
+		    else{
+
+		    }
+		    Titanium.API.info('Descripcion\n' + cropRect.x + '\n'+cropRect.y + '\n'+cropRect.height + '\n'+cropRect.whidth);
+	    },
+    });
+};
+
+
+
 /*funcion para dehabilitar el boton back de android 
 $.index.addEventListener('android:back', function(){
   alert('click en boton back y no funciona')
@@ -129,6 +161,11 @@ $.btnMenusUarios.addEventListener('click', function(e){
   var wins= new modal();
   wins.open();
 })
+
+//orientacion de dispositivo
+
+Alloy.Globals.isLandscase=false;
+Alloy.Globals.isPortrait=true;
 
 $.index.add(tooas);
 $.index.open();
