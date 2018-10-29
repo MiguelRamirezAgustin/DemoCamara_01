@@ -15,7 +15,7 @@ $.btnConsulta.addEventListener('click', function(e){
       setTimeout(function(){
        var acceso=Alloy.createController('usuarios').getView();
        acceso.open();
-      },2000); 
+      },1000); 
     },
      onerror:function(e){
          alert('Usuaro y contraseña incorrecta');

@@ -1,0 +1,9 @@
+<Alloy>
+  <Window  backgroundColor="white" layout="vertical">
+     <View id="VerUsuario"  height="100%" whidth="100%" borderColor="blue" top="0%" backgroundColor="white">
+        <ScrollView id="scrollviews" showVerticalScrollIndicator="true" layout="vertical" borderColor="red" 
+                   backgroundColor="white">
+        </ScrollView>
+     </View>
+  </Window>
+</Alloy>

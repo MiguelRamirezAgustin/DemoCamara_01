@@ -3,12 +3,12 @@
 var btn= Titanium.UI.createButton({
       title:'Crear Usuarios',
       width:'40%',
-      height:"38%",
+      height:"40%",
       left:"5%",
       top:"25%",
       borderRadius:5,
       backgroundColor:"white",
-      color:"black",
+      color:"#7C77FA",
       borderColor:"white"
 })
 $.viewCrearUsuario.add(btn);
@@ -34,6 +34,7 @@ btn.addEventListener('click', function(e){
       }
    });
    crearView.add(labelNombre);
+
    var texFieldNombre=Ti.UI.createTextField({
       width:"55%",
       height:"7%",
@@ -42,7 +43,8 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:18,
    });
    crearView.add(texFieldNombre);
 
@@ -65,7 +67,8 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:20,
    });
    crearView.add(textFielApellidoPaterno);
 
@@ -88,7 +91,8 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:20,
    });
    crearView.add(textFielApellidoMaterno);
    
@@ -111,7 +115,9 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:25,
+      keyboardType:Titanium.UI.KEYBOARD_TYPE_EMAIL
    });
    crearView.add(textFieldEmail);
 
@@ -133,7 +139,9 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:15,
+      passwordMask:true,
    });
    crearView.add(textFieldPassword);
 
@@ -156,7 +164,9 @@ btn.addEventListener('click', function(e){
       borderColor:"black",
       borderRadius:5,
       top:"0%",
-      color:"black"
+      color:"black",
+      maxLength:15,
+      passwordMask:true,
    });
    crearView.add(textFieldPasswordConfirmation);
 
@@ -186,7 +196,8 @@ btn.addEventListener('click', function(e){
       onload:function(e){
              var result=JSON.parse(this.responseText);
             // alert(JSON.stringify(result)); ver texto que muestra
-            alert('Usuario Creado\n ')
+            alert('Usuario Creado\n ');
+            
        },
        onerror:function(e){
              //alert(e.error);
@@ -210,86 +221,24 @@ btn.addEventListener('click', function(e){
 
 });
 
-//boton y campos para mostrar los usuarios
 
+
+
+//boton y campos para mostrar los usuarios
 var btnMostraUsuario =Titanium.UI.createButton({
       title:'Ver usuarios',
       width:'40%',
-      height:"38%",
+      height:"40%",
       left:"6%",
       top:"25%",
       borderRadius:5,
       backgroundColor:"white",
-      color:"black",
+      color:"#7C77FA",
       borderColor:"white"
   })
 $.viewCrearUsuario.add(btnMostraUsuario);
 
-var scrollView=Ti.UI.createScrollView({
-      showVerticalScrollIndicator: true,
+btnMostraUsuario.addEventListener('click', function(e){
+   var ver= Alloy.createController('verUsuarios').getView();
+   ver.open();
 });
-
-     
-//consulta de usuarios con metodo get
-btnMostraUsuario.addEventListener('click', function(){
-      var url="https://api.cloud.appcelerator.com/v1/users/query.json?key=osLPdnTb5dq1f7qZnvalENoEk1b1TRkI&pretty_json=true&count=true";
-     var xhr=Ti.Network.createHTTPClient({
-         onload:function(e){
-          var result=JSON.parse(this.responseText);
-
-          alert(JSON.stringify(result));
-
-          for(var i=0; i<result.response.users.lenght; i++){
-           
-                /*var viewUsauarios=Ti.UI.createView({
-                      width:"100%",
-                      height:"18%",
-                      backgroundColor:'white',//"#8A86FB",
-                      borderRadius:5,
-                      borderColor:"black",
-                      layout:"vertical",
-                });
-                $.viewVerUsuario.add(viewUsauarios);*/
-                
-                var labelNombre=Ti.UI.createLabel({
-                   color:"black",
-                   left:"5%",
-                   text:result.response.users[i].username,
-                   font:{
-                         fontSize:15
-                   }
-                });
-                $.viewVerUsuario.add(labelNombre);
-
-                var labelApellidoPaterno=Ti.UI.createLabel({
-                   color:"black",
-                   left:"5%",
-                   text:result.response.users[i].first_name,
-                   font:{
-                         fontSize:15
-                   }
-                });
-                viewUsauarios.add(labelApellidoPaterno);
-
-                var labelApellidoMaterno=Ti.UI.createLabel({
-                   color:"black",
-                   left:"5%",
-                   text:result.response.users[i].last_name,
-                   font:{
-                         fontSize:15
-                   }
-                });
-                viewUsauarios.add(labelApellidoMaterno);
-                 
-          }
-
-         },
-         onerror:function(e){
-            alert(e.error);
-         },
-         timeout:500
-     });
-     xhr.open('GET', url);
-     xhr.send();
-});
-
